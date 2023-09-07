@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "anysoft-test"
+client_id = "7c538d21fa1aa3ab8a7cc0f2d7cf437a"
+application_url = "https://june-recommendation-post-surname.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://june-recommendation-post-surname.trycloudflare.com/auth/callback",
+  "https://june-recommendation-post-surname.trycloudflare.com/auth/shopify/callback",
+  "https://june-recommendation-post-surname.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "anysoft-test.myshopify.com"
